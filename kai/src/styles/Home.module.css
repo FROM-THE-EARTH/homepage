@@ -108,6 +108,21 @@
   margin-left: 0.5rem;
 }
 
+
+
+
+.text {
+  margin-left: 200px;
+  display: flex;
+  
+
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
