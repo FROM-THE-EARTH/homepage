@@ -19,6 +19,12 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+function createLabel(
+  Label_Text : string,
+){
+  return{Label_Text};
+}
+
 function createData(
   name: string,
   calories: string,
@@ -27,31 +33,38 @@ function createData(
 }
 
 const rows = [
+  createData('団体名', '東北大学  FROM THE EARTH'),
   createData('設立', '2011年XX月XX日'),
   createData('代表', '長内 海渡'),
   createData('現役メンバー部員', '46人'),
 ];
 
+const Label_Text = [
+  createLabel('団体紹介'),
+]
+
 export default function BasicTable() {
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>団体名</TableCell>
-            <TableCell align="right">東北大学  FROM THE EARTH</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
+
+    <TableContainer component={Paper} sx={ {marginTop: 8,
+      display: '-ms-flexbox',
+      marginLeft:10,
+      flexDirection: 'column',}} >
+      <h1>.Label_Text</h1>
+      <Table sx={ {marginTop: 8,
+        display: 'flex',
+        flexDirection: 'column',
+        }}  aria-label="" >
+        <TableBody sx={{ '&:last-child td ,&:last-child th': { border: 0} }} >
           {rows.map((row) => (
             <TableRow
               key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              
             >
-              <TableCell component="th" scope="row">
+              <TableCell component="h1" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
+              <TableCell align="left">{row.calories}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -59,4 +72,3 @@ export default function BasicTable() {
     </TableContainer>
   );
 }
-
