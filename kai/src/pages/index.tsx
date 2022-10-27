@@ -18,6 +18,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ClientRequest } from 'http';
 
 function createData(
   name: string,
@@ -25,6 +26,14 @@ function createData(
 ) {
   return { name, calories};
 }
+
+function dislabe(
+  text: string,){
+    return(
+      <h1>test</h1>
+    );
+  }
+
 
 const rows = [
   createData('設立', '2011年XX月XX日'),
@@ -34,24 +43,28 @@ const rows = [
 
 export default function BasicTable() {
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+    <TableContainer component={Paper} sx={{ 
+      marginTop: 8,
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'column'}} >
+      <h1>test</h1>
+      <Table sx={{ width:700 ,}} aria-label="simple-table">
         <TableHead>
           <TableRow>
             <TableCell>団体名</TableCell>
-            <TableCell align="right">東北大学  FROM THE EARTH</TableCell>
+            <TableCell align="left">東北大学  FROM THE EARTH</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow
               key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            >
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
+              <TableCell align="left">{row.calories}</TableCell>
             </TableRow>
           ))}
         </TableBody>
