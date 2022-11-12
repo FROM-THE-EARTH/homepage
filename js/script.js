@@ -154,8 +154,8 @@ $('.tab a').on('click', function() {
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 768){
 			var responsiveImage = [//PC用の画像
-				{ src: './img/rocket_ver2/launcher.JPG'},
-				{ src: './img/rocket_ver2/match.jpg'},
+				{ src: './img/rocket_ver2/kawabata.JPG'},
+				{ src: './img/rocket_ver2/mai-mai.jpeg'},
 				{ src: './img/cansat/izu-can-going.JPG'}
 			];
 		} else {
