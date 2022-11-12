@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* レイアウトのためのCSS */
 
+* {
+    font-weight: bolder;
+}
+
 body{
     background:#000;
     font-family: 'Noto Sans JP', sans-serif;
