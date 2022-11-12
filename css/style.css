@@ -1,3 +1,32 @@
-#main-area #list{
+.item_wrapper{
+  margin: 100px;
+}
+#item_container{
+  margin-bottom: 50px;
+}
+#list{
   display: flex;
+  flex-wrap: wrap;
+}
+#list dt{
+  width: 50%;
+  border-bottom: 1px solid white;
+  padding: 20px;
+}
+#list dd{
+  width: 50%;
+  border-bottom: 1px solid white;
+  padding: 20px;
+}
+.representative_container{
+  display: flex;
+}
+.img_representative{
+  width: 50%;
+  margin: 30px;
+  
+}
+.text_representative{
+  width: 50%;
+  margin: 30px;
 }

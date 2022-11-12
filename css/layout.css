@@ -343,6 +343,12 @@ body.appear #vidual-area::after{
     background-size: cover;
 }
 
+#service .engine-1-img{
+    height: 60vh;
+    background:url("../img/01.jpg") no-repeat center;
+    background-size: cover;
+}
+
 @media screen and (max-width:570px) {
 #service .service-img-wrapper,
 #service .service-img{
