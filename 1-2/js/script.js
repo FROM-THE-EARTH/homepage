@@ -297,10 +297,10 @@ $(window).scroll(function () {
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load',function(){
 
-    $("#splash-logo").delay(1200).fadeOut('slow');//ロゴを1.2秒でフェードアウトする記述
+    $("#splash-logo").delay(1).fadeOut('slow');//ロゴを1.2秒でフェードアウトする記述
 
     //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-    $("#splash").delay(1500).fadeOut('slow',function(){
+    $("#splash").delay(1).fadeOut('slow',function(){
     
     $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与 
     
