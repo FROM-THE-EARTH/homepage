@@ -296,20 +296,40 @@ $(window).scroll(function () {
 
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load',function(){
-		$('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
-		mediaQueriesWin();// 機能編 5-1-1 ドロップダウンメニュー（上）の関数を呼ぶ
-		FixedAnime();// 機能編 5-1-6 スクロール途中から上部固定
-		setFadeElement();// 機能編 8-1-4  ページトップリンク:ページの指定の範囲内で出現（右から左）の関数を呼ぶ
-		// $("#splash-logo").delay(1000).fadeOut('slow');//ロゴを1.2秒でフェードアウトする記述
-		/*機能編 5-4-1タブメニューの読み込み*/
-    var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-		GethashID (hashName);//設定したタブの読み込み 
+
+    $("#splash-logo").delay(1000).fadeOut('slow');//ロゴを1.2秒でフェードアウトする記述
+
     //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-    // $("#splash").delay(1000).fadeOut('slow',function(){
+    $("#splash").delay(1000).fadeOut('slow',function(){
+    
+    $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与 
+    
+    mediaQueriesWin();// 機能編 5-1-1 ドロップダウンメニュー（上）の関数を呼ぶ
+	FixedAnime();// 機能編 5-1-6 スクロール途中から上部固定
+	setFadeElement();// 機能編 8-1-4  ページトップリンク:ページの指定の範囲内で出現（右から左）の関数を呼ぶ
+    
+    /*機能編 5-4-1タブメニューの読み込み*/
+    var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
+	GethashID (hashName);//設定したタブの読み込み   
+        
+	});
+    //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
+
+    /*===========================================================*/
+    /*機能編 4-2-4背景色が伸びる（左から右） */
+    /*===========================================================*/
+
+    //=====ここから背景が伸びた後に動かしたいJSをまとめる
+    $('.splashbg').on('animationend', function() {
+        
     /* 印象編 4 最低限おぼえておきたい動きの関数を呼ぶ*/
     fadeAnime();        
     // 印象編 8-6 アルファベットがランダムに変化して出現 
-		$(".endAnime").removeClass("endAnime");
-		TypingInit(); //印象編 8-6 アルファベットがランダムに変化して出現 初期設定
-		TypingAnime();//印象編 8-6 アルファベットがランダムに変化して出現 
-});
+	$(".endAnime").removeClass("endAnime");
+	TypingInit(); //印象編 8-6 アルファベットがランダムに変化して出現 初期設定
+	TypingAnime();//印象編 8-6 アルファベットがランダムに変化して出現  
+
+    });
+    //=====ここまで背景が伸びた後に動かしたいJSをまとめる
+    
+});// ここまでページが読み込まれたらすぐに動かしたい場合の記述
