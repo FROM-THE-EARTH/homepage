@@ -154,9 +154,9 @@ $('.tab a').on('click', function() {
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
 		if (windowwidth > 768){
 			var responsiveImage = [//PC用の画像
-				{ src: './img/main_01.jpg'},
-				{ src: './img/main_02.jpg'},
-				{ src: './img/main_03.jpg'}
+				{ src: './img/rocket_ver2/launcher.JPG'},
+				{ src: './img/rocket_ver2/match.jpg'},
+				{ src: './img/cansat/izu-can-going.JPG'}
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
