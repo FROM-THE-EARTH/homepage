@@ -19,7 +19,29 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	width: 300px;
+	height: 300px;
 	transform: translate(-50%, -50%);
+}
+
+/* fadeUpをするアイコンの動き */
+.fadeUp{
+	animation-name: fadeUpAnime;
+	animation-duration:0.5s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
 }
 
 /*========= 画面遷移のためのCSS ===============*/
@@ -40,7 +62,7 @@ body.appear .splashbg{
     top: 0;
 	left: 0;
     transform: scaleX(0);
-    background-color: #960021;/*伸びる背景色の設定*/
+    background-color: #ec622b;/*伸びる背景色の設定 960021*/
 	animation-name:PageAnime;
 	animation-duration:.8s;
 	animation-timing-function:ease-in-out;

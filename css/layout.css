@@ -116,6 +116,9 @@ h2{
 }
 
 /* header */
+#header {
+    background-color: #000;
+}
 
 #header h1 a{
     color: #ddd;
@@ -153,7 +156,7 @@ h2{
 
 body.appear #vidual-area::after{
     content:'';
-    background:#960021;
+    background: #ec622b; /*960021*/
     width:0;
     height: 12%;
     position: absolute;
@@ -181,7 +184,7 @@ body.appear #vidual-area::after{
     position: absolute;
     top:0;
     right: 0;
-    width:85%;
+    width:100%;
     z-index: -1;/*最背面へ*/
 }
 
@@ -377,7 +380,7 @@ body.appear #vidual-area::after{
 
 .news-img{
     height: 60vh;
-    background:url("../img/02.jpg") no-repeat center;
+    background:url("../img/rocket_ver2/launcher.JPG") no-repeat center;
     background-size: cover;
 }
 
