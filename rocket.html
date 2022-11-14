@@ -18,8 +18,14 @@
     <!--自作のCSS-->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/parts.css">
-    <link rel="stylesheet" type="text/css" href="css/layout_rocket.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
     <style>
+
+        .REC{
+            margin-bottom: 5px;
+            font-size: 40px;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
         .discription {
             margin-bottom: 5px;
             font-size: 45px;
@@ -31,9 +37,20 @@
             font-family: 'Noto Sans JP', sans-serif;
         }
 
-        .s_discription{
+        .s_discription {
             margin-bottom: 10px;
             margin-right: 100px;
+        }
+
+        .topimg {
+            border: 2px solid #000;
+            margin: auto;
+        }
+
+        .topimg img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -62,12 +79,12 @@
                         <li><a href="/aboutus.html">About Us</a></li>
                         <li class="has-child"><a href="#">Project</a>
                             <ul>
-                                <li><a href="#">Rocket</a></li>
+                                <li><a href="/rocket.html">Rocket</a></li>
                                 <li><a href="/cansat.html">Cansat</a></li>
                                 <li><a href="/engine.html">Engin</a></li>
                             </ul>
                         </li>
-                        <li><a href="/volunteer.html">Volunteer</a></li>
+                        <li><a href="#">Volunteer</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -89,6 +106,10 @@
 
         <main id="main-area">
 
+            <div class="topimg">
+                <img src="./img/rocket_ver2/tonbo_best.jpg" alt="">
+            </div>
+
             <section id="service">
 
                 <div style="margin-right : 130px">
@@ -101,15 +122,26 @@
 
                 </div>
 
-                <div style="margin-left: 100px">
+                <div style="margin-right : 130px">
+
+                    <img src="img/rocket_ver2/12EC_HP (1).png" width="700px" height="300px">
+
+                    <h1 class="REC">REC<span class="brief">-ジンバルカメラを搭載した空撮機体</span></h1>
+                    <p class="s_discription">
+                        12期代が2022年伊豆大島共同打ち上げ実験に向けて製作した機体。360度の映像を記録する高画質ジンバルカメラを搭載。映像の記録に成功し、パラシュートによる減速にも成功。団体の横扉式解放機構技術の確立をすることができた。機体全長1715mm,機体重量6516g,推定最高高度333m。
+                    </p>
+
                     <img src="img/rocket_ver2/tomoshibi_切り抜き.png" width="700px" height="300px">
 
-                    <h1 class="discription">灯<span class="brief">-団体初となる「自作エンジン」を搭載機体</span></h1>
-                    <p class="s_discription">FTEが6年間かけて開発してきた自作エンジンの実証を行うことに成功。パラシュートによる減速及び飛翔データの回収にも成功した。機体全長1715mm,機体重量6516g,推定最高高度333m。</p>
+                    <h1 class="discription">灯<span class="brief">-団体初となる「自作エンジン」を搭載した機体</span></h1>
+                    <p class="s_discription">
+                        FTEが6年間かけて開発してきた自作エンジンの実証を行うことに成功。パラシュートによる減速及び飛翔データの回収にも成功した。機体全長1715mm,機体重量6516g,推定最高高度333m。
+                    </p>
 
                     <img src="img/rocket_ver2/tombo_切り抜き.png" width="700px" height="300px">
                     <h1 class="discription">蜻蛉<span class="brief">-360度カメラと複数の小型カメラを搭載した空撮大型機体</span></h1>
-                    <p class="s_discription">FTE史上最大の機体。映像配信を目的とした下向きのカメラと360度の映像を記録するジンバルカメラを搭載。機体全長2027mm,機体重量7970g。</p>
+                    <p class="s_discription">FTE史上最大の機体。映像配信を目的とした下向きのカメラと360度の映像を記録するジンバルカメラを搭載。機体全長2027mm,機体重量7970g。
+                    </p>
                 </div>
 
                 <div>
@@ -127,55 +159,67 @@
             <ul id="gallery" class="gallery">
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/ひまわり.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/ひまわり.jpg" alt=""></a></div>
+                            data-title="ひまわり"><img src="img/rocket_ver2/ひまわり.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/ちんちろりん.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/ちんちろりん.jpg" alt=""></a></div>
+                            data-title="ちんちろりん"><img src="img/rocket_ver2/ちんちろりん.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/ほろ.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/ほろ.jpg" alt=""></a></div>
+                            data-title="ほろ"><img src="img/rocket_ver2/ほろ.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/FTE08.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/FTE08.jpg" alt=""></a></div>
+                            data-title="FTE08"><img src="img/rocket_ver2/FTE08.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/polaris.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/polaris.jpg" alt=""></a></div>
+                            data-title="polaris"><img src="img/rocket_ver2/polaris.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/sirius.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/sirius.jpg" alt=""></a></div>
+                            data-title="sirius"><img src="img/rocket_ver2/sirius.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/天照.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/天照.jpg" alt=""></a></div>
+                            data-title="天照"><img src="img/rocket_ver2/天照.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/FTE07.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/FTE07.jpg" alt=""></a></div>
+                            data-title="FTE07"><img src="img/rocket_ver2/FTE07.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/FTE06.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/FTE06.jpg" alt=""></a></div>
+                            data-title="FTE06"><img src="img/rocket_ver2/FTE06.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/朱雀.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/朱雀.jpg" alt=""></a></div>
+                            data-title="朱雀"><img src="img/rocket_ver2/朱雀.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/boo.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/boo.jpg" alt=""></a></div>
+                            data-title="boo"><img src="img/rocket_ver2/boo.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/FTE05.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/FTE05.jpg" alt=""></a></div>
+                            data-title="FTE05"><img src="img/rocket_ver2/FTE05.jpg" alt=""></a></div>
                 </li>
                 <li class="bgextend bgLRextendTrigger zoomInRotate">
                     <div class="bgappearTrigger"><a href="img/rocket_ver2/燕.jpg" data-lightbox="gallery-group"
-                            data-title="2025.11.03 新車が入荷しました！"><img src="img/rocket_ver2/燕.jpg" alt=""></a></div>
+                            data-title="燕"><img src="img/rocket_ver2/燕.jpg" alt=""></a></div>
+                </li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger"><a href="img/rocket_ver2/FTE01.jpg" data-lightbox="gallery-group"
+                            data-title="FTE01"><img src="img/rocket_ver2/FTE01.jpg" alt=""></a></div>
+                </li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger"><a href="img/rocket_ver2/FTE03.jpg" data-lightbox="gallery-group"
+                            data-title="FTE03"><img src="img/rocket_ver2/FTE03.jpg" alt=""></a></div>
+                </li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger"><a href="img/rocket_ver2/regulus.jpg" data-lightbox="gallery-group"
+                            data-title="regulus"><img src="img/rocket_ver2/regulus.jpg" alt=""></a></div>
                 </li>
             </ul>
 
