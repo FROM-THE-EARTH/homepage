@@ -1,278 +1,304 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>volunteer</title>
-<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
-<meta name="robots" content="noindex,nofollow"><meta name="keywords"  content="">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<!--=============Google Font ===============-->
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP%7COswald&display=swap" rel="stylesheet">
-<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
-<!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
-<!--機能編 6-2-1 複数の画像を一覧で見せる-->    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
-<!--自作のCSS-->
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/parts.css">
-<link rel="stylesheet" type="text/css" href="css/layout.css">
+    <meta charset="utf-8">
+    <title>volunteer</title>
+    <meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+    <meta name="robots" content="noindex,nofollow"><meta name="keywords"  content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--=============Google Font ===============-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP%7COswald&display=swap" rel="stylesheet">
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+    <!--機能編 6-2-1 複数の画像を一覧で見せる-->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    <!--自作のCSS-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/parts.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/layout_rocket.css">
 
-<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-6/css/reset.css">
-<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-6/css/3-2-3-6.css">
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-6/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-6/css/3-2-3-6.css">
 
-<style>
-    .vol{
-        margin-top: 15px;
-        text-align: center;
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-    .topimg{
-    border: 2px solid #000;
-    margin: auto;
-    }
-    .topimg img{
-        width: 100%;
-        height: 700px;
-        object-fit: cover; 
-    }
-    
-    .box{
-    margin-top: 30px;
-    width: 90vw;
-    box-sizing:border-box;
-    }
+    <style>
+        .vol{
+            margin-top: 15px;
+            text-align: center;
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        .topimg{
+        border: 2px solid #000;
+        margin: auto;
+        }
+        .topimg img{
+            width: 100%;
+            height: 700px;
+            object-fit: cover; 
+        }
+        
+        .box{
+        margin-top: 30px;
+        width: 90vw;
+        box-sizing:border-box;
+        }
 
 
-</style>
+    </style>
 </head>
 
 <body>
 
-<!-- <div id="splash">
-<div id="splash-logo"><div class="loader"></div></div>
-</div>
-<div class="splashbg"></div> -->
-
-    
-<div id="container">
-<header id="header">
-        <h1><a href="#">FROM THE EARTH</a></h1>
-          
-        <div class="g-nav-openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div></div>
-        <nav id="g-nav">
-        <div id="g-nav-list">
-                <ul id="g-navi" class="nav01c">
-                    <li><a href="/">Top</a></li>
-                    <li><a href="/aboutus.html">About Us</a></li>
-                    <li class="has-child"><a href="#">Project</a>
-                        <ul>
-                        <li><a href="/rocket.html">Rocket</a></li>
-                        <li><a href="/cansat.html">Cansat</a></li>
-                        <li><a href="/engine.html">Engin</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Volunteer</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-        </div>
-        </nav>
-        </header>
-        
-   
-<div id="search-wrap">
-<div class="close-btn"><span></span><span></span></div>
-<div class="search-area">
-<form role="search" method="get" action="">
-<input type="text" value="" name="" id="search-text" placeholder="search">
-<input type="submit" id="searchsubmit" value="">
-</form>
-<!--/search-area--></div>
-<!--/search-wrap--></div>
-
-
-<!--/slider-area--></div>
-
-
-    
-<div class="scrolldown1"><span>Scroll</span></div>
-
-<!--/vidual-area--></section>
-
-<main id="main-area">
-    <div class="topimg">
-        <img src="./img/volunteer/pet1.png" alt="">
+    <!-- <div id="splash">
+    <div id="splash-logo"><div class="loader"></div></div>
     </div>
-    <div class="vol">
-        <h1>社会事業</h1>
-        <p><br>小学生の頃、地元の宇宙センターでペットボトルロケットを飛ばした記憶。児童館で宇宙教室に参加した記憶。近所の丘のうえで飽きるまで星を見た記憶。
-        <br>そんな小さなきっかけが、今、そして将来、私たちを”宇宙”という大きな夢へと導きます。
-        <br>私たち自身も宇宙へと導く存在でありたい。幼い頃感じたあのワクワクを、もっとたくさんの人と共有したい。
-        <br>その一心で、小中高生対象のワークショップの開催や教材開発を行っています。
-        </p>
-        <div class="box fadeUpTrigger">
-            <p><font size="10">「すべての人に夢と感動を与える」</font><br>壮大とも言える理念を掲げた私たちの活動に、ご期待ください。</p>
+    <div class="splashbg"></div> -->
+
+        
+    <div id="container">
+    <header id="header">
+            <h1><a href="#">FROM THE EARTH</a></h1>
+            
+            <div class="g-nav-openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div></div>
+            <nav id="g-nav">
+            <div id="g-nav-list">
+                    <ul id="g-navi" class="nav01c">
+                        <li><a href="/">Top</a></li>
+                        <li><a href="/aboutus.html">About Us</a></li>
+                        <li class="has-child"><a href="#">Project</a>
+                            <ul>
+                            <li><a href="/rocket.html">Rocket</a></li>
+                            <li><a href="/cansat.html">Cansat</a></li>
+                            <li><a href="/engine.html">Engin</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+            </div>
+            </nav>
+            </header>
+            
+    
+    <div id="search-wrap">
+    <div class="close-btn"><span></span><span></span></div>
+    <div class="search-area">
+    <form role="search" method="get" action="">
+    <input type="text" value="" name="" id="search-text" placeholder="search">
+    <input type="submit" id="searchsubmit" value="">
+    </form>
+    <!--/search-area--></div>
+    <!--/search-wrap--></div>
+
+
+    <!--/slider-area--></div>
+
+
+        
+    <div class="scrolldown1"><span>Scroll</span></div>
+
+    <!--/vidual-area--></section>
+
+    <main id="main-area">
+        <div class="topimg">
+            <img src="./img/volunteer/pet1.png" alt="">
+        </div>
+        <div class="vol">
+            <h1>社会事業</h1>
+            <p><br>小学生の頃、地元の宇宙センターでペットボトルロケットを飛ばした記憶。児童館で宇宙教室に参加した記憶。近所の丘のうえで飽きるまで星を見た記憶。
+            <br>そんな小さなきっかけが、今、そして将来、私たちを”宇宙”という大きな夢へと導きます。
+            <br>私たち自身も宇宙へと導く存在でありたい。幼い頃感じたあのワクワクを、もっとたくさんの人と共有したい。
+            <br>その一心で、小中高生対象のワークショップの開催や教材開発を行っています。
+            </p>
+            <div class="box fadeUpTrigger">
+                <p><font size="10">「すべての人に夢と感動を与える」</font><br>壮大とも言える理念を掲げた私たちの活動に、ご期待ください。</p>
+            </div>
+            
         </div>
         
-    </div>
-    
-    <section id="service">
-        <!---<p class="service-lead"><span class="bgextend bgRLextendTrigger"><span class="bgappearTrigger">エンジン設計では、<br>燃料設計から構造設計自分たちでイチから行います。</span></span></p>
-        --->
-        <div class="service-area">
+        <section id="service">
+            <!---<p class="service-lead"><span class="bgextend bgRLextendTrigger"><span class="bgappearTrigger">エンジン設計では、<br>燃料設計から構造設計自分たちでイチから行います。</span></span></p>
+            --->
+            <div class="service-area">
+                    <section class="bgextend bgLRextendTrigger">
+                        <div class="bgappearTrigger">
+                        <header>
+                        <h3>小学生対象の宇宙教室</h3>
+                        </header>
+                        <p>小学生対象の宇宙教室やペットボトルロケット教室、缶サット教室を開催しています。
+                            <br>いずれのワークショップでも共通しているのは、「必ずはじめに宇宙の話をする」こと。その後、FTE部員と力を合わせてものづくりに励む子供達の姿は、真剣そのもの。
+                            <br>最後に、作ったものの打ち上げや走行体験を行います。
+                        </p>
+                        </div>
+                    </section>
+
+                    <section class="bgextend bgLRextendTrigger">
+                        <div class="bgappearTrigger">
+                            <img src="./img/volunteer/LINE_ALBUM_学祭2022_221113.jpg">
+                        </div>
+                </section>
+                <div class="service-img-wrapper bgextend bgLRextendTrigger">
+                <div class="bgappearTrigger">
+                    <div class="bgappearTrigger">
+                        <img src="./img/volunteer/s2.png">
+                    </div>
+                </div>
+                <!--/service-img-wrapper--></div>
+            <!--/service-area--></div>
+
+            <div class="service-area">
+                    <section class="bgextend bgLRextendTrigger">
+                        <div class="bgappearTrigger">
+                        <header>
+                        <h3>中高生対象の<br>宇宙教室、進路講演会</h3>
+                        </header>
+                        <p>中高生対象の宇宙教室やモデルロケット(火薬を用いた小型ロケット)教室、缶サット教室の他、進路講演会を開催しています。
+                            <br>FTE部員とチームを組んでものづくりに取り組むことで、より近い距離で交流できる、と好評です。
+                            <br>また、東北大を目指す理系高校生向けに、進路講演会を開催し、東北大、FTEの魅力を発信しています。
+                        </p>
+                        </div>
+                    </section>
+
+                    <section class="bgextend bgLRextendTrigger">
+                        <div class="bgappearTrigger">
+                            <img src="./img/volunteer/LINE_ALBUM_青陵CanSat教室_221113_0.jpg">
+                        </div>
+                    </section>
+                <div class="service-img-wrapper bgextend bgLRextendTrigger">
+                <div class="bgappearTrigger">
+                    <div class="bgappearTrigger">
+                        <img src="./img/volunteer/LINE_ALBUM_青陵CanSat教室_221113.jpg">
+                    </div>
+                </div>
+                <!--/service-img-wrapper--></div>
+            <!--/service-area--></div>
+
+            <div class="service-area">
                 <section class="bgextend bgLRextendTrigger">
                     <div class="bgappearTrigger">
                     <header>
-                    <h3>小学生対象の宇宙教室</h3>
+                    <h3>教材開発</h3>
                     </header>
-                    <p>小学生対象の宇宙教室やペットボトルロケット教室、缶サット教室を開催しています。
-                        <br>いずれのワークショップでも共通しているのは、「必ずはじめに宇宙の話をする」こと。その後、FTE部員と力を合わせてものづくりに励む子供達の姿は、真剣そのもの。
-                        <br>最後に、作ったものの打ち上げや走行体験を行います。
+                    <p>FTEにしかできないコンテンツを提供したい、という想いから、ものづくりの流れを体験したり、プログラミングを学んだりできる教材を開発しています。
+                        <br>安全面、学習効果、そして何より楽しさを重視した教材は全て、これまでのワークショップ開催の経験に基づいたものです。
                     </p>
                     </div>
                 </section>
 
                 <section class="bgextend bgLRextendTrigger">
                     <div class="bgappearTrigger">
-                        <img src="./img/volunteer/LINE_ALBUM_学祭2022_221113.jpg">
-                    </div>
-               </section>
-            <div class="service-img-wrapper bgextend bgLRextendTrigger">
-            <div class="bgappearTrigger">
-                <div class="bgappearTrigger">
-                    <img src="./img/volunteer/s2.png">
-                </div>
-            </div>
-            <!--/service-img-wrapper--></div>
-        <!--/service-area--></div>
-
-        <div class="service-area">
-                <section class="bgextend bgLRextendTrigger">
-                    <div class="bgappearTrigger">
-                    <header>
-                    <h3>中高生対象の<br>宇宙教室、進路講演会</h3>
-                    </header>
-                    <p>中高生対象の宇宙教室やモデルロケット(火薬を用いた小型ロケット)教室、缶サット教室の他、進路講演会を開催しています。
-                        <br>FTE部員とチームを組んでものづくりに取り組むことで、より近い距離で交流できる、と好評です。
-                        <br>また、東北大を目指す理系高校生向けに、進路講演会を開催し、東北大、FTEの魅力を発信しています。
-                    </p>
-                    </div>
-                </section>
-
-                <section class="bgextend bgLRextendTrigger">
-                    <div class="bgappearTrigger">
-                        <img src="./img/volunteer/LINE_ALBUM_青陵CanSat教室_221113_0.jpg">
+                        <img src="./img/volunteer/k1.png">
                     </div>
                 </section>
             <div class="service-img-wrapper bgextend bgLRextendTrigger">
             <div class="bgappearTrigger">
                 <div class="bgappearTrigger">
-                    <img src="./img/volunteer/LINE_ALBUM_青陵CanSat教室_221113.jpg">
+                    <img src="./img/volunteer/k2.png">
                 </div>
             </div>
             <!--/service-img-wrapper--></div>
         <!--/service-area--></div>
 
-        <div class="service-area">
-            <section class="bgextend bgLRextendTrigger">
-                <div class="bgappearTrigger">
-                <header>
-                <h3>教材開発</h3>
-                </header>
-                <p>FTEにしかできないコンテンツを提供したい、という想いから、ものづくりの流れを体験したり、プログラミングを学んだりできる教材を開発しています。
-                    <br>安全面、学習効果、そして何より楽しさを重視した教材は全て、これまでのワークショップ開催の経験に基づいたものです。
-                </p>
-                </div>
-            </section>
 
-            <section class="bgextend bgLRextendTrigger">
-                <div class="bgappearTrigger">
-                    <img src="./img/volunteer/k1.png">
-                </div>
-            </section>
-        <div class="service-img-wrapper bgextend bgLRextendTrigger">
-        <div class="bgappearTrigger">
-            <div class="bgappearTrigger">
-                <img src="./img/volunteer/k2.png">
-            </div>
-        </div>
-        <!--/service-img-wrapper--></div>
-    <!--/service-area--></div>
-
-
-    </section>
-
-
-
-<ul id="gallery" class="gallery">
-		<li class="bgextend bgLRextendTrigger zoomInRotate"><div class="bgappearTrigger"><a href="img/gal_01_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！"><img src="img/volunteer/image (2).png" alt=""></a></div></li>
-		<li class="bgextend bgLRextendTrigger zoomInRotate"><div class="bgappearTrigger"><a href="img/gal_02_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！"><img src="img/volunteer/LINE_ALBUM_12月立町マイPBR教室_221112_0.jpg" alt=""></a></div></li>
-		<li class="bgextend bgLRextendTrigger zoomInRotate"><div class="bgappearTrigger"><a href="img/gal_03_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！"><img src="img/volunteer/LINE_ALBUM_ペットボトルロケット教室_221112_0.jpg" alt=""></a></div></li>
-		<li class="bgextend bgLRextendTrigger zoomInRotate"><div class="bgappearTrigger"><a href="img/gal_04_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！"><img src="img/volunteer/image (3).png" alt=""></a></div></li>
-		<li class="bgextend bgLRextendTrigger zoomInRotate"><div class="bgappearTrigger"><a href="img/gal_05_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！"><img src="img/volunteer/image (4).png" alt=""></a></div></li>
-		<li class="bgextend bgLRextendTrigger zoomInRotate"><div class="bgappearTrigger"><a href="img/gal_06_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！"><img src="img/volunteer/LINE_ALBUM_学祭2022_221112.jpg" alt=""></a></div></li>
-		<li class="bgextend bgLRextendTrigger zoomInRotate"><div class="bgappearTrigger"><a href="img/gal_07_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！"><img src="img/volunteer/LINE_ALBUM_青陵CanSat教室_221112.jpg" alt=""></a></div></li>
-		<li class="bgextend bgLRextendTrigger zoomInRotate"><div class="bgappearTrigger"><a href="img/gal_08_l.jpg" data-lightbox="gallery-group" data-title="2025.11.03 新車が入荷しました！"><img src="img/volunteer/image.png" alt=""></a></div></li>
-</ul>
-    
-    <!----
-    <div class="bgappearTrigger">-->
-        <section id="contact">
-            <div class="contact-detail">
-                <h2>Contact</h2>
-                <p>メールにてお気軽にお問い合わせください。</p>
-            <!--/contact-detail--></div>
-          <div class="contact-tel">
-              <p><a href="mailto:fromtheearth.tohoku@gmail.com">fromtheearth.tohoku@gmail.com</a></p>
-              <p><a href="/contact.html">お問い合わせ<br>フォーム</a></p>
-          <!--/contact-tel--></div>
         </section>
-    <!--/bgappearTrigger--></div>
-    <!--/bgextend--></div>
-</main>
 
-<footer id="footer">
-    <div class="footer-info">
-    <p class="footer-logo">FROM THE EARTH</p>
-    <address>〒980-8576 仙台市青葉区川内41</address>
-    <ul>
-        <li><dl><dt>E-mail</dt><dd><a href="mailto:fromtheearth.tohoku@gmail.com">fromtheearth.tohoku@gmail.com</a></dd></dl></li>
-    </ul>
-    </div>
-    
-    <div class="footer-link">
+
+
+        <ul id="gallery" class="gallery">
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger">
+                        <a href="img/volunteer/image (2).png" data-lightbox="gallery-group" data-title="PBRを飛ばす直前の様子、子供たちのワクワクが伝わってきます。">
+                            <img src="img/volunteer/image (2).png" alt=""></a></div></li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger">
+                        <a href="img/volunteer/LINE_ALBUM_12月立町マイPBR教室_221112_0.jpg" data-lightbox="gallery-group" data-title="PBR製作の様子、FTE部員がやさしく教えます。">
+                            <img src="img/volunteer/LINE_ALBUM_12月立町マイPBR教室_221112_0.jpg" alt=""></a></div></li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger">
+                        <a href="img/volunteer/LINE_ALBUM_ペットボトルロケット教室_221112_0.jpg" data-lightbox="gallery-group" data-title="宇宙教室の様子、楽しく学べると好評です。">
+                            <img src="img/volunteer/LINE_ALBUM_ペットボトルロケット教室_221112_0.jpg" alt=""></a></div></li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger">
+                        <a href="img/volunteer/image (3).png" data-lightbox="gallery-group" data-title="PBR製作の様子、FTE部員がやさしく教えます。">
+                            <img src="img/volunteer/image (3).png" alt=""></a></div></li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger"><a href="img/volunteer/image (4).png" data-lightbox="gallery-group" data-title="進路講演会の様子、将来の部員獲得のチャンスです。">
+                        <img src="img/volunteer/image (4).png" alt=""></a></div></li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger">
+                        <a href="img/volunteer/LINE_ALBUM_学祭2022_221112.jpg" data-lightbox="gallery-group" data-title="ワークショップを開催した日は、FTE部員にとっても、充実した一日です。">
+                            <img src="img/volunteer/LINE_ALBUM_学祭2022_221112.jpg" alt=""></a></div></li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger"><a href="img/volunteer/LINE_ALBUM_青陵CanSat教室_221112.jpg" data-lightbox="gallery-group" data-title="缶サット教室の様子、FTE部員と協力して缶サットを作り上げます。">
+                        <img src="img/volunteer/LINE_ALBUM_青陵CanSat教室_221112.jpg" alt=""></a></div></li>
+                <li class="bgextend bgLRextendTrigger zoomInRotate">
+                    <div class="bgappearTrigger">
+                        <a href="img/volunteer/image.png" data-lightbox="gallery-group" data-title="PBR教室の様子、他団体様とコラボした企画も実施中です。">
+                            <img src="img/volunteer/image.png" alt=""></a></div></li>
+        </ul>
+        
+        
+        <!----
+        <div class="bgappearTrigger">-->
+            <section id="contact">
+                <div class="contact-detail">
+                    <h2>Contact</h2>
+                    <p>メールにてお気軽にお問い合わせください。</p>
+                <!--/contact-detail--></div>
+            <div class="contact-tel">
+                <p><a href="mailto:fromtheearth.tohoku@gmail.com">fromtheearth.tohoku@gmail.com</a></p>
+                <p><a href="/contact.html">お問い合わせ<br>フォーム</a></p>
+            <!--/contact-tel--></div>
+            </section>
+        <!--/bgappearTrigger--></div>
+        <!--/bgextend--></div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-info">
+        <p class="footer-logo">FROM THE EARTH</p>
+        <address>〒980-8576 仙台市青葉区川内41</address>
         <ul>
-			<li><a href="/">Top</a></li>
-			<li><a href="/aboutus.html">About Us</a></li>
-			<li><a href="/rocket.html">Rocket</a></li>
-            <li><a href="/cansat.html">Cansat</a></li>
-            <li><a href="/engine.html">Engine</a></li>
-            <li><a href="#">Volunteer</a></li>
-            <li><a href="/contact">Contact</a></li>
-		</ul>
-        <small>Copyright &copy; FROM THE EARTH All rights Reserved.</small>
-    </div>    
-	<p id="page-top" class="hide-btn"><a href="#"><span></span></a></p>
-</footer>
+            <li><dl><dt>E-mail</dt><dd><a href="mailto:fromtheearth.tohoku@gmail.com">fromtheearth.tohoku@gmail.com</a></dd></dl></li>
+        </ul>
+        </div>
+        
+        <div class="footer-link">
+            <ul>
+                <li><a href="/">Top</a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
+                <li><a href="/rocket.html">Rocket</a></li>
+                <li><a href="/cansat.html">Cansat</a></li>
+                <li><a href="/engine.html">Engine</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <small>Copyright &copy; FROM THE EARTH All rights Reserved.</small>
+        </div>    
+        <p id="page-top" class="hide-btn"><a href="#"><span></span></a></p>
+    </footer>
 
-<!--/container--></div>
+    <!--/container--></div>
 
-<!--=============JS ===============--> 
-<!--jQuery-->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
-<!--機能編 6-2-1 複数の画像を一覧で見せる-->    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
-<!--印象編　8-6 アルファベットがランダムに変化して出現-->  
-<script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
-<!--自作のJS-->   
-<script src="js/script.js"></script>
+    <!--=============JS ===============--> 
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+    <!--機能編 6-2-1 複数の画像を一覧で見せる-->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+    <!--印象編　8-6 アルファベットがランダムに変化して出現-->  
+    <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
+    <!--自作のJS-->   
+    <script src="js/script.js"></script>
+    <script src="js/script-index.js"></script>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-6/js/3-2-3-6.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-6/js/3-2-3-6.js"></script>
 
 </body>
 </html>
