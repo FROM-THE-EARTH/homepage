@@ -52,6 +52,20 @@
             height: 700px;
             object-fit: cover;
         }
+        .area-margin {
+            margin-right: 130px;
+        }
+        @media screen and (max-width:450px) {
+            .area-margin {
+                margin-right: 0px;
+            }
+            .discription, .REC {
+                font-size: 20px;
+            }
+            .brief {
+                font-size: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -84,7 +98,7 @@
                                 <li><a href="/engine.html">Engine</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="/volunteer.html">Volunteer</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -112,7 +126,7 @@
 
             <section id="service">
 
-                <div style="margin-right : 130px">
+                <div class="area-margin">
                     <h2 class="js_typing" style="text-align: left">rocket project</h2>
                     <!-- <p class="service-lead"><span class="bgextend bgRLextendTrigger"><span class="bgappearTrigger">カーキングでは、輸入車向けの自動車部品の販売や、<br>輸入車の整備・販売を行っております。</span></span></p> -->
                             <p class="service-lead" style="text-align: left"><span class="bgextend bgRLextendTrigger"><span
@@ -122,7 +136,7 @@
 
                 </div>
 
-                <div style="margin-right : 130px">
+                <div class="area-margin">
 
                     <img src="img/rocket_ver2/12EC_HP (1).png" width="700px" height="300px">
 

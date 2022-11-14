@@ -248,11 +248,17 @@ body.appear #vidual-area::after{
 }
 
 @media screen and (max-width:450px) {
-#vidual-area h2{
-    font-size:7vw;
-    top: inherit;
-    bottom: 13%;
-}
+    #vidual-area h2{
+        font-size:6vw;
+        top: inherit;
+        bottom: 13%;
+    }
+    p {
+        font-size: 0.5rem;
+    }
+    .item_wrapper {
+        margin: 20px;
+    }
 
 }
 
@@ -448,6 +454,22 @@ body.appear #vidual-area::after{
 .gallery img:hover{
     opacity: 1;
 }
+
+/* connect */
+#connect{
+    padding: 10% 0 10% 15%;
+}
+#connect h2 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:768px) {
+#connect{
+    padding: 30% 0 10% 30px;
+}
+}
+
 
 /* contact */
 

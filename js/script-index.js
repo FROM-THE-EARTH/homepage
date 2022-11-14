@@ -161,9 +161,10 @@ var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0
 			];
 		} else {
 			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
-				{ src: './img/main_01_sp.jpg' },
-				{ src: './img/main_02_sp.jpg' },
-				{ src: './img/main_03_sp.jpg' }
+				{ src: './img/rocket_ver2/kawabata.JPG'},
+				{ src: './img/rocket_ver2/mai-mai-sp.jpeg'},
+				{ src: './img/cansat/izu-can-going.JPG'},
+				{ src: './img/volunteer/wachawacha.png'},
 			];
 		}
 
