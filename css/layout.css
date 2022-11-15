@@ -247,6 +247,10 @@ body.appear #vidual-area::after{
     
 }
 
+.item_wrapper {
+    margin: 100px;
+}
+
 @media screen and (max-width:450px) {
     #vidual-area h2{
         font-size:6vw;
