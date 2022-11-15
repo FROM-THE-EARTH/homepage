@@ -461,13 +461,20 @@ body.appear #vidual-area::after{
 }
 #connect h2 {
     margin-top: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+}
+#connect img {
+    width: 300px;
 }
 
 @media screen and (max-width:768px) {
 #connect{
     padding: 30% 0 10% 30px;
 }
+#connect img {
+    width: 80px;
+}
+
 }
 
 
