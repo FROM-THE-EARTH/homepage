@@ -468,7 +468,8 @@ body.appear #vidual-area::after{
     margin-bottom: 15px;
 }
 #connect img {
-    width: 300px;
+    width: 230px;
+    margin: 20px;
 }
 
 @media screen and (max-width:768px) {
@@ -477,6 +478,7 @@ body.appear #vidual-area::after{
 }
 #connect img {
     width: 80px;
+    margin: 10px;
 }
 
 }
