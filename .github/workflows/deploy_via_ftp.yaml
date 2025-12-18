@@ -24,3 +24,4 @@ jobs:
           **/.git*
           **/.github*
           **/node_modules/*
+          **/blog.fte-tohoku.tech/*
