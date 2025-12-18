@@ -19,7 +19,7 @@ jobs:
         server: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /home/${{ secrets.HP_DOMAIN }}/public_html/
+        server-dir: /${{ secrets.HP_DOMAIN }}/public_html/
         exclude: |
           **/.git*
           **/.github*
