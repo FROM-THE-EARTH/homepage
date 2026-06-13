@@ -253,11 +253,16 @@ function fadeAnime(){
 /*  印象編 8-6 アルファベットがランダムに変化して出現*/
 /*===========================================================*/
 var arr = []
+var originalTexts = []
+var initialized = false
 //初期値の設定
 function TypingInit() {
+	if (initialized) return; // 既に初期化済みなら何もしない
 	$('.js_typing').each(function (i) { //js_typingクラスを全て処理をおこなう
+		originalTexts[i] = $(this).text(); // 元の文字列を保存
 		arr[i] = new ShuffleText(this);//動作させるテキストを配列に格納
 	});
+	initialized = true;
 }
 //スクロールした際のアニメーションの設定
 function TypingAnime() {
@@ -267,6 +272,9 @@ function TypingAnime() {
 		var windowHeight = $(window).height();
 		if (scroll >= elemPos - windowHeight) {
 			if(!$(this).hasClass("endAnime")){//endAnimeのクラスがあるかチェック
+				// 元の文字列に戻してからアニメーション開始
+				$(this).text(originalTexts[i]);
+				arr[i] = new ShuffleText(this); // 新しいインスタンスを作成
 				arr[i].start();//配列で登録テキストのアニメーションをおこなう
 				arr[i].duration = 800;//テキストが最終変化するまでの時間※規定値600
 				$(this).addClass("endAnime");//１度アニメーションした場合はendAnimeクラスを追加
