@@ -1,0 +1,27 @@
+name: Deploy to XServer via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v6
+      
+    - name: Deploy to XServer via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /${{ secrets.HP_DOMAIN }}/public_html/
+        exclude: |
+          **/.git*
+          **/.github*
+          **/node_modules/*
+          **/blog.fte-tohoku.tech/*
